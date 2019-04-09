@@ -5,36 +5,37 @@ html {
     background-repeat: no-repeat;
 }
 
-/* gray box */
+
 .container {
-    position: absolute;
-    background-color: rgba(109, 99, 201, 0.5);
-    width: 900px;
-    height: 300px;
-    top: 50px;
-    left: 500px;
+    position: relative;
+    background-color: rgba(109, 99, 201, 0.8);
+    width: 1000px;
+    height: 500px;
     border-radius: 20px;
+    margin: 0 auto;
 }
 
 .score-box {
-    position: absolute;
+    position: relative;
     background-color: rgba(48, 48, 48, 0.8);
-    left: 38%;
-    top: 10%;
     border-style: solid;
     border-radius: 10px;
-    height: 60%;
-    width: 20%;
+    border-color: white;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
 }
 
+/* score header */
 h3 {
-    position: absolute;
     background-color: rgb(255, 222, 13, 0.9);
     left: 20px;
     font-family: cursive;
     font-size: 40px;
     border-radius: 10px;
     margin-top: 2%;
+    display: inline-block;
 }
 
 /* inside score box */
@@ -46,6 +47,7 @@ h3 {
     font-size: 70px;
     font-family: cursive;
     color : #f5f822;
+    display: inline;
 }
 
 /* inside score box */
@@ -59,36 +61,47 @@ h3 {
     color : #f5f822;
 }
 
-.comp-gif {
+.player-weapons-box {
     position: absolute;
     background-color: rgba(48, 48, 48, 0.8);
     border-radius: 10px;
-    left: 20px;
-    top: 20px;
     height: 170px;
     width: 300px;
+    right: 20px;
+    top: 30px;
+    text-align: center;
 }
 
-.comp-gif-img {
+.button-icon-r {
+    background-color: white;
     position: absolute;
-    border-radius: 10px;
-    left: 30px;
-    top: 9px;
+    border-style: solid;
+    border-color: rgb(32, 31, 31);
+    border-width: 7px;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 134px;
+    width: 88px;
+    right: 3px;
+    top: 15px;
+    margin: 4px;
 }
-
-/* rock paper scissors icons box */
-.player-tools {
-    position: absolute;
-    background-color: rgba(48, 48, 48, 0.8);
-    border-radius: 10px;
-    right: 35px;
-    top: 20px;
-    height: 170px;
-    width: 300px;
-}
-
-button {
+.button-icon-p {
+    background-color: white;
     position: relative;
+    border-style: solid;
+    border-color: rgb(32, 31, 31);
+    border-width: 7px;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 134px;
+    width: 88px;
+    margin: auto;
+
+}
+.button-icon-s {
+    background-color: white;
+    position: absolute;
     border-style: solid;
     border-color: rgb(32, 31, 31);
     border-width: 7px;
@@ -102,7 +115,21 @@ button {
 }
 
 /* r-p-s icons */
-.play-icon {
+.play-icon-r {
+    position: absolute;
+    height: 120px;
+    left: 4px;
+    top: 0px;
+    margin: 0px;
+}
+.play-icon-p {
+    position: absolute;
+    height: 120px;
+    left: 4px;
+    top: 0px;
+    margin: 0px;
+}
+.play-icon-s {
     position: absolute;
     height: 120px;
     left: 4px;
@@ -110,25 +137,64 @@ button {
     margin: 0px;
 }
 
+.comp-gif-box {
+    position: absolute;
+    background-color: rgba(48, 48, 48, 0.8);
+    border-radius: 10px;
+    left: 20px;
+    top: 30px; 
+    height: 170px;
+    width: 300px;
+}
+
+.comp-gif-img {
+    position: absolute;
+    border-radius: 0px;
+    left: 30px;
+    top: 9px;
+}
+
+.clicked-r {
+    display: none;
+    position: absolute;
+    right: 45px;
+    height: 100px
+}
+.clicked-p {
+    display: none;
+    position: absolute;
+    right: 140px;
+    height: 100px
+}
+.clicked-s {
+    display: none;
+    position: absolute;
+    right: 245px;
+    height: 100px
+}
+.compguess-r {
+    display: none;
+    position: absolute;
+    left: 145px;
+    height: 100px
+}
+.compguess-p {
+    display: none;
+    position: absolute;
+    left: 145px;
+    height: 100px
+}
+.compguess-s {
+    display: none;
+    position: absolute;
+    left: 145px;
+    height: 100px
+}
 button:hover {
     border-color: rgb(255, 222, 13, 0.9);
 }
 button:active {
     border-color: rgb(46, 206, 6);
-}
-
-.small-container {
-    position: absolute;
-    background-color: rgba(109, 99, 201, 0.5);
-    border-radius: 20px;
-    height: 100px;;
-    width: 900px;
-    top: 360px;
-    left: 500px;
-}
-
-@media (max-width: 1280px) {
-
 }
 
 

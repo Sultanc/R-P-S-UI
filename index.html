@@ -5,32 +5,42 @@
         <meta charset="utf-8">
         <title>Rock-Paper-Scissors</title>
         <meta name="description" content="Rock-Paper-Scissors">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
+<div class="second-body">
     <div class="container">
 
         <div class="score-box">
             <h3>SCORE</h3>
-            <div class="player-score">0</div>
+            <div class="player-score">2</div>
             <div class="comp-score">0</div>
         </div>
 
-        <div class="comp-gif">
+        <div class="comp-gif-box">
             <img class="comp-gif-img"src="https://media1.tenor.com/images/c4c56abc62d84f14746e5389f92bcad6/tenor.gif?itemid=3478470" alt="Tv GIF - Television Galaxies Hipster GIFs" style="max-width: 546px; background-color: rgb(86, 97, 103);" width="230" height="150">
         </div>
         
-        <div class="player-tools">
-            <button><img class="play-icon"src="images/s.png"></button>
-            <button><img class="play-icon"src="images/p.png"></button>
-            <button><img class="play-icon"src="images/r.png"></button>
+        <div class="player-weapons-box">
+            <button class="button-icon-r"><img class= "play-icon-r" src="images/r.png"></button>
+            <button class="button-icon-p"><img class= "play-icon-p"src="images/p.png"></button>
+            <button class="button-icon-s"><img class= "play-icon-s" src="images/s.png"></button>
+        </div>
+        <div>
+            <img class="clicked-r"src="images/r-trimed.png">
+            <img class="clicked-p"src="images/p-trimed.png">
+            <img class="clicked-s"src="images/s-trimed.png">
+        </div>
+        <div>
+            <img class="compguess-r"src="images/r-trimed.png">
+            <img class="compguess-p"src="images/p-trimed.png">
+            <img class="compguess-s"src="images/s-trimed.png">
         </div>
     </div>
-    
-    <div class="small-container">s</div>
-
-        <script src="script.js"></script>
+</div>
+<script src="script.js"></script>
     </body>
 </html>
