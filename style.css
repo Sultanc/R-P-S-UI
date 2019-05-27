@@ -20,18 +20,18 @@ html {
     background-color: rgba(48, 48, 48, 0.8);
     border-style: solid;
     border-radius: 10px;
-    border-color: white;
+    border-color: rgb(10, 10, 9);
     height: 200px;
     width: 200px;
     margin: auto;
     text-align: center;
+    font-family: monospace;
 }
 
 /* score header */
 h3 {
     background-color: rgb(255, 222, 13, 0.9);
     left: 20px;
-    font-family: cursive;
     font-size: 40px;
     border-radius: 10px;
     margin-top: 2%;
@@ -45,8 +45,7 @@ h3 {
     right: 5px;
     bottom: 0px;
     font-size: 70px;
-    font-family: cursive;
-    color : #f5f822;
+    color : rgb(255, 222, 13, 0.9);
     display: inline;
 }
 
@@ -57,8 +56,7 @@ h3 {
     left: 5px;
     bottom: 0px;
     font-size: 70px;
-    font-family: cursive;
-    color : #f5f822;
+    color : rgb(255, 222, 13, 0.9);
 }
 
 .player-weapons-box {
@@ -72,7 +70,11 @@ h3 {
     text-align: center;
 }
 
-.button-icon-r {
+/* player buttons */
+#rock {
+    background-image: url("images/r.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     background-color: white;
     position: absolute;
     border-style: solid;
@@ -86,9 +88,12 @@ h3 {
     top: 15px;
     margin: 4px;
 }
-.button-icon-p {
+#paper { 
+    background-image: url("images/p.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     background-color: white;
-    position: relative;
+    position: absolute;
     border-style: solid;
     border-color: rgb(32, 31, 31);
     border-width: 7px;
@@ -96,10 +101,14 @@ h3 {
     cursor: pointer;
     height: 134px;
     width: 88px;
-    margin: auto;
-
+    right: 100px;
+    top: 15px;
+    margin: 4px;
 }
-.button-icon-s {
+#scissors {
+    background-image: url("images/s.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     background-color: white;
     position: absolute;
     border-style: solid;
@@ -113,28 +122,11 @@ h3 {
     top: 15px;
     margin: 4px;
 }
-
-/* r-p-s icons */
-.play-icon-r {
-    position: absolute;
-    height: 120px;
-    left: 4px;
-    top: 0px;
-    margin: 0px;
+#rock:hover, #paper:hover, #scissors:hover {
+    border-color: rgb(255, 222, 13, 0.9);
 }
-.play-icon-p {
-    position: absolute;
-    height: 120px;
-    left: 4px;
-    top: 0px;
-    margin: 0px;
-}
-.play-icon-s {
-    position: absolute;
-    height: 120px;
-    left: 4px;
-    top: 0px;
-    margin: 0px;
+#rock:active, #paper:active, #scissors:active {
+    border-color: rgb(46, 206, 6);
 }
 
 .comp-gif-box {
@@ -190,11 +182,7 @@ h3 {
     left: 145px;
     height: 100px
 }
-button:hover {
-    border-color: rgb(255, 222, 13, 0.9);
-}
-button:active {
-    border-color: rgb(46, 206, 6);
-}
+
+
 
 
