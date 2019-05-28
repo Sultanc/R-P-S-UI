@@ -13,6 +13,7 @@ function game(e){
     console.log('COM: ' + computerSelection)
     console.log(e.target)
     playRound(computerSelection,e);
+    actionDisplay(computerSelection,e);
 }
 
 function playRound(computerSelection,e) {
@@ -20,4 +21,8 @@ function playRound(computerSelection,e) {
     console.log('Draw')
     
  }
+}
+//switch cases to display action
+function actionDisplay(computerSelection,e) {
+  switch
 }
