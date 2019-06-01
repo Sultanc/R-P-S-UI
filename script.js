@@ -1,12 +1,12 @@
 const rock = document.querySelector('#rock').addEventListener('click',game);
 const paper = document.querySelector('#paper').addEventListener('click',game);
 const scissors = document.querySelector('#scissors').addEventListener('click',game);
-const clickedRock = document.querySelector('.clicked-r');
-const clickedPaper = document.querySelector('.clicked-p');
-const clickedScissors = document.querySelector('.clicked-s');
-const compGuess_R = document.querySelector('.compguess-r');
-const compGuess_P = document.querySelector('.compguess-p');
-const compGuess_S = document.querySelector('.compguess-s');
+const clickedRock = document.querySelector('#clicked-r');
+const clickedPaper = document.querySelector('#clicked-p');
+const clickedScissors = document.querySelector('#clicked-s');
+const compGuess_R = document.querySelector('#compguess-r');
+const compGuess_P = document.querySelector('#compguess-p');
+const compGuess_S = document.querySelector('#compguess-s');
 
 function game(e){
     const computerSelection = computerPlay();

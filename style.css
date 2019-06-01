@@ -147,43 +147,39 @@ h3 {
 }
 
 /* action display */
-.clicked-r {
+#clicked-r {
     display: none;
     position: absolute;
     right: 45px;
     height: 100px
 }
-.clicked-p {
+#clicked-p {
     display: none;
     position: absolute;
     right: 140px;
     height: 100px
 }
-.clicked-s {
+#clicked-s {
     display: none;
     position: absolute;
     right: 245px;
     height: 100px
 }
-.compguess-r {
+#compguess-r {
     display: none;
     position: absolute;
     left: 145px;
     height: 100px
 }
-.compguess-p {
+#compguess-p {
     display: none;
     position: absolute;
     left: 145px;
     height: 100px
 }
-.compguess-s {
+#compguess-s {
     display: none;
     position: absolute;
     left: 145px;
     height: 100px
 }
-
-
-
-
