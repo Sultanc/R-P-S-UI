@@ -15,16 +15,45 @@ function game(e){
       return computerGuess[Math.floor(Math.random() * 3)];
     }
     console.log('COM: ' + computerSelection)
-    console.log(e.target)
-    playRound(computerSelection,e);
+    console.log(e.target.id)
     actionDisplay(computerSelection,e);
+    playRound(computerSelection,e);
 }
 //match up
 function playRound(computerSelection,e) {
   if (computerSelection === e.target.id) {
     console.log('Draw')
- }
-}
+  }
+  if (computerSelection === 'rock') {
+    if (e.target.id === 'paper') {
+      // playerScore ++;
+      console.log('You Win')
+      return 'you win'
+    }else {'scissors'}
+        console.log('COM win')
+        return 'Computer is the Winner! r>s';
+     }
+  if (computerSelection === 'paper') {
+    if (e.target.id === 'rock') {
+      console.log('COM win')
+      return 'Computer is the Winner! p>r';
+    }else {
+        console.log('You Win')
+        return 'You Win';
+      }
+    }
+  if (computerSelection === 'scissors') {
+    if (e.target.id === 'rock') {
+        console.log('You Win')
+        return 'You win';
+    }else {
+        console.log('COM win')
+        return 'Computer is the Winner! s>p';
+      }
+    }
+} 
+  
+  
 
 //switch to display action
 function actionDisplay(computerSelection,e) {
