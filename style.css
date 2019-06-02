@@ -151,7 +151,9 @@ h3 {
     display: none;
     position: absolute;
     right: 45px;
-    height: 100px
+    height: 100px;
+    animation-name: example;
+    animation-duration: 4s;
 }
 #clicked-p {
     display: none;
@@ -183,3 +185,8 @@ h3 {
     left: 145px;
     height: 100px
 }
+
+@keyframes example {
+    from {display: block;}
+    to {display: none !important;}
+  }

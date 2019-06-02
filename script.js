@@ -31,7 +31,7 @@ function playRound(computerSelection,e) {
       // playerScore ++;
       console.log('You Win1')
       return;
-    }else {'scissors'}
+    }else 
         console.log('COM win1')
         return;
      }
@@ -39,7 +39,7 @@ function playRound(computerSelection,e) {
     if (e.target.id === 'rock') {
       console.log('COM win2')
       return;
-    }else {'scissors'}
+    }else 
         console.log('You Win2')
         return;
     }
@@ -47,7 +47,7 @@ function playRound(computerSelection,e) {
     if (e.target.id === 'rock') {
       console.log('You Win3')
       return;
-    }else {'paper'}
+    }else 
         console.log('COM win3')
         return;
     }
