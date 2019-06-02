@@ -30,7 +30,7 @@ function playRound(computerSelection,e) {
     if (e.target.id === 'paper') {
       // playerScore ++;
       console.log('You Win1')
-      return 'you win'
+      return;
     }else {'scissors'}
         console.log('COM win1')
         return;
@@ -38,7 +38,7 @@ function playRound(computerSelection,e) {
   if (computerSelection === 'paper') {
     if (e.target.id === 'rock') {
       console.log('COM win2')
-      return 'Computer is the Winner! p>r';
+      return;
     }else {'scissors'}
         console.log('You Win2')
         return;
