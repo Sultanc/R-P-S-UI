@@ -19,42 +19,40 @@ function game(e){
     actionDisplay(computerSelection,e);
     playRound(computerSelection,e);
 }
+
 //match up
 function playRound(computerSelection,e) {
   if (computerSelection === e.target.id) {
     console.log('Draw')
+    return;
   }
   if (computerSelection === 'rock') {
     if (e.target.id === 'paper') {
       // playerScore ++;
-      console.log('You Win')
+      console.log('You Win1')
       return 'you win'
     }else {'scissors'}
-        console.log('COM win')
-        return 'Computer is the Winner! r>s';
+        console.log('COM win1')
+        return;
      }
   if (computerSelection === 'paper') {
     if (e.target.id === 'rock') {
-      console.log('COM win')
+      console.log('COM win2')
       return 'Computer is the Winner! p>r';
-    }else {
-        console.log('You Win')
-        return 'You Win';
-      }
+    }else {'scissors'}
+        console.log('You Win2')
+        return;
     }
   if (computerSelection === 'scissors') {
     if (e.target.id === 'rock') {
-        console.log('You Win')
-        return 'You win';
-    }else {
-        console.log('COM win')
-        return 'Computer is the Winner! s>p';
-      }
+      console.log('You Win3')
+      return;
+    }else {'paper'}
+        console.log('COM win3')
+        return;
     }
 } 
   
-  
-
 //switch to display action
 function actionDisplay(computerSelection,e) {
   switch (e.target.id) {
