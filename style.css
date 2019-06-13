@@ -147,8 +147,8 @@ h3 {
 }
 
 /* action display */
-#clicked-r {
-    display: none;
+.clicked-r {
+    visibility: visible;
     position: absolute;
     right: 45px;
     height: 100px;
@@ -156,37 +156,47 @@ h3 {
     animation-duration: 1s;
 }
 #clicked-p {
-    display: none;
+    visibility: hidden;
     position: absolute;
     right: 140px;
-    height: 100px
+    height: 100px;
+    animation-name: none;
+    animation-duration: 2s;
 }
 #clicked-s {
-    display: none;
+    visibility: hidden;
     position: absolute;
     right: 245px;
-    height: 100px
+    height: 100px;
+    animation-name: none;
+    animation-duration: 2s;
 }
 #compguess-r {
-    display: none;
+    visibility: hidden;
     position: absolute;
     left: 145px;
-    height: 100px
+    height: 100px;
+    animation-name: none;
+    animation-duration: 2s;
 }
 #compguess-p {
-    display: none;
+    visibility: hidden;
     position: absolute;
     left: 145px;
-    height: 100px
+    height: 100px;
+    animation-name: none;
+    animation-duration: 2s;
 }
 #compguess-s {
-    display: none;
+    visibility: hidden;
     position: absolute;
     left: 145px;
-    height: 100px
+    height: 100px;
+    animation-name: none;
+    animation-duration: 2s;
 }
 
 @keyframes example {
-    from {opacity: 100;}
-    to {opacity: 0;}
+    from {visibility: visible;}
+    to {visibility: hidden;}
   }

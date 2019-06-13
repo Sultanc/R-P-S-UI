@@ -7,6 +7,7 @@ const clickedScissors = document.querySelector('#clicked-s');
 const compGuess_R = document.querySelector('#compguess-r');
 const compGuess_P = document.querySelector('#compguess-p');
 const compGuess_S = document.querySelector('#compguess-s');
+// const cssSheet = document.querySelector('#linkElement').sheet;
 
 function game(e){
     const computerSelection = computerPlay();
@@ -57,7 +58,7 @@ function playRound(computerSelection,e) {
 function actionDisplay(computerSelection,e) {
   switch (e.target.id) {
     case 'rock':
-      clickedRock.style.display = 'block';
+      clickedRock.classList.add('clicked-r');
       break;
       case 'paper':
       clickedPaper.style.display = 'block';
