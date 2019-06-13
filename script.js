@@ -61,21 +61,21 @@ function actionDisplay(computerSelection,e) {
       clickedRock.classList.add('clicked-r');
       break;
       case 'paper':
-      clickedPaper.style.display = 'block';
+      clickedPaper.classList.add('clicked-p');
       break;
       case 'scissors':
-      clickedScissors.style.display = 'block';
+      clickedScissors.classList.add('clicked-s');
       break;
   }
   switch (computerSelection) {
     case 'rock':
-      compGuess_R.style.display = 'block';
+      compGuess_R.classList.add('compguess-r');
       break;
       case 'paper':
-      compGuess_P.style.display = 'block';
+      compGuess_P.classList.add('compguess-p');
       break;
       case 'scissors':
-      compGuess_S.style.display = 'block';
+      compGuess_S.classList.add('compguess-s');
       break;
   }
 }

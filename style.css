@@ -155,45 +155,45 @@ h3 {
     animation-name: example;
     animation-duration: 1s;
 }
-#clicked-p {
-    visibility: hidden;
+.clicked-p {
+    visibility: visible;
     position: absolute;
     right: 140px;
     height: 100px;
-    animation-name: none;
-    animation-duration: 2s;
+    animation-name: example;
+    animation-duration: 1s;
 }
-#clicked-s {
-    visibility: hidden;
+.clicked-s {
+    visibility: visible;
     position: absolute;
     right: 245px;
     height: 100px;
-    animation-name: none;
-    animation-duration: 2s;
+    animation-name: example;
+    animation-duration: 1s;
 }
-#compguess-r {
-    visibility: hidden;
+.compguess-r {
+    visibility: visible;
     position: absolute;
     left: 145px;
     height: 100px;
-    animation-name: none;
-    animation-duration: 2s;
+    animation-name: example;
+    animation-duration: 1s;
 }
-#compguess-p {
-    visibility: hidden;
+.compguess-p {
+    visibility: visible;
     position: absolute;
     left: 145px;
     height: 100px;
-    animation-name: none;
-    animation-duration: 2s;
+    animation-name: example;
+    animation-duration: 1s;
 }
-#compguess-s {
-    visibility: hidden;
+.compguess-s {
+    visibility: visible;
     position: absolute;
     left: 145px;
     height: 100px;
-    animation-name: none;
-    animation-duration: 2s;
+    animation-name: example;
+    animation-duration: 1s;
 }
 
 @keyframes example {
