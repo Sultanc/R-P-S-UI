@@ -7,7 +7,6 @@ const clickedScissors = document.querySelector('#clicked-s');
 const compGuess_R = document.querySelector('#compguess-r');
 const compGuess_P = document.querySelector('#compguess-p');
 const compGuess_S = document.querySelector('#compguess-s');
-// const cssSheet = document.querySelector('#linkElement').sheet;
 
 function game(e){
     const computerSelection = computerPlay();
@@ -54,28 +53,32 @@ function playRound(computerSelection,e) {
     }
 } 
   
-//switch to display action
+//game action display
+
 function actionDisplay(computerSelection,e) {
-  switch (e.target.id) {
-    case 'rock':
-      clickedRock.classList.add('clicked-r');
-      break;
-      case 'paper':
-      clickedPaper.classList.add('clicked-p');
-      break;
-      case 'scissors':
-      clickedScissors.classList.add('clicked-s');
-      break;
-  }
-  switch (computerSelection) {
-    case 'rock':
-      compGuess_R.classList.add('compguess-r');
-      break;
-      case 'paper':
-      compGuess_P.classList.add('compguess-p');
-      break;
-      case 'scissors':
-      compGuess_S.classList.add('compguess-s');
-      break;
-  }
+  if (e.target.id == 'rock') {
+    clickedRock.style.visibility = 'visible';
+  }else clickedRock.style.visibility = 'hidden';
+
+  if (e.target.id == 'paper') {
+    clickedPaper.style.visibility = 'visible';
+  }else clickedPaper.style.visibility = 'hidden';
+
+  if (e.target.id == 'scissors') {
+    clickedScissors.style.visibility = 'visible';
+  }else clickedScissors.style.visibility = 'hidden';
+
+  if (computerSelection == 'rock') {
+    compGuess_R.style.visibility = 'visible';
+  }else compGuess_R.style.visibility = 'hidden';
+
+  if (computerSelection == 'paper') {
+    compGuess_P.style.visibility = 'visible';
+  }else compGuess_P.style.visibility = 'hidden';
+
+  if (computerSelection == 'scissors') {
+    compGuess_S.style.visibility = 'visible';
+  }else compGuess_S.style.visibility = 'hidden';
 }
+
+ 

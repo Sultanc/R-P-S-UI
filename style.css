@@ -147,52 +147,52 @@ h3 {
 }
 
 /* action display */
-.clicked-r {
-    visibility: visible;
+#clicked-r {
+    /* visibility: visible; */
     position: absolute;
     right: 45px;
     height: 100px;
-    animation-name: example;
+    /* animation-name: example; */
     animation-duration: 1s;
 }
-.clicked-p {
-    visibility: visible;
+#clicked-p {
+    /* visibility: visible; */
     position: absolute;
     right: 140px;
     height: 100px;
-    animation-name: example;
+    /* animation-name: example; */
     animation-duration: 1s;
 }
-.clicked-s {
-    visibility: visible;
+#clicked-s {
+    /* visibility: visible; */
     position: absolute;
     right: 245px;
     height: 100px;
-    animation-name: example;
+    /* animation-name: example; */
     animation-duration: 1s;
 }
-.compguess-r {
-    visibility: visible;
+#compguess-r {
+    /* visibility: visible; */
     position: absolute;
     left: 145px;
     height: 100px;
-    animation-name: example;
+    /* animation-name: example; */
     animation-duration: 1s;
 }
-.compguess-p {
-    visibility: visible;
+#compguess-p {
+    /* visibility: visible; */
     position: absolute;
     left: 145px;
     height: 100px;
-    animation-name: example;
+    /* animation-name: example; */
     animation-duration: 1s;
 }
-.compguess-s {
-    visibility: visible;
+#compguess-s {
+    /* visibility: visible; */
     position: absolute;
     left: 145px;
     height: 100px;
-    animation-name: example;
+    /* animation-name: example; */
     animation-duration: 1s;
 }
 
