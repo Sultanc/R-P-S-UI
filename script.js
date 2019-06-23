@@ -7,6 +7,8 @@ const clickedScissors = document.querySelector('#clicked-s');
 const compGuess_R = document.querySelector('#compguess-r');
 const compGuess_P = document.querySelector('#compguess-p');
 const compGuess_S = document.querySelector('#compguess-s');
+const winMsg = document.querySelector('.winner');
+const winContainer = document.querySelector('.win-container');
 
 function game(e){
     const computerSelection = computerPlay();
@@ -24,31 +26,44 @@ function game(e){
 function playRound(computerSelection,e) {
   if (computerSelection === e.target.id) {
     console.log('Draw')
+    winMsg.innerHTML = 'Draw';
+    winMsg.style.color = 'black';
     return;
   }
   if (computerSelection === 'rock') {
     if (e.target.id === 'paper') {
-      // playerScore ++;
       console.log('You Win1')
+      winMsg.innerHTML = 'You Win';
+      winMsg.style.color = 'green';
       return;
     }else 
         console.log('COM win1')
+        winMsg.innerHTML = 'You Lose';
+        winMsg.style.color = 'red';
         return;
      }
   if (computerSelection === 'paper') {
     if (e.target.id === 'rock') {
       console.log('COM win2')
+      winMsg.innerHTML = 'You Lose';
+      winMsg.style.color = 'red';
       return;
     }else 
         console.log('You Win2')
+        winMsg.innerHTML = 'You Win';
+        winMsg.style.color = 'green';
         return;
     }
   if (computerSelection === 'scissors') {
     if (e.target.id === 'rock') {
       console.log('You Win3')
+      winMsg.innerHTML = 'You Win';
+      winMsg.style.color = 'green';
       return;
     }else 
         console.log('COM win3')
+        winMsg.innerHTML = 'You Lose';
+        winMsg.style.color = 'red';
         return;
     }
 } 
