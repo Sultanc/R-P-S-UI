@@ -34,42 +34,41 @@ function playRound(computerSelection,e) {
     if (e.target.id === 'paper') {
       console.log('You Win1')
       winMsg.innerHTML = 'You Win';
-      winMsg.style.color = 'green';
+      winMsg.style.color = 'rgb(46, 206, 6)';
       return;
     }else 
         console.log('COM win1')
-        winMsg.innerHTML = 'You Lose';
+        winMsg.innerHTML = 'You Lose 💩';
         winMsg.style.color = 'red';
         return;
      }
   if (computerSelection === 'paper') {
     if (e.target.id === 'rock') {
       console.log('COM win2')
-      winMsg.innerHTML = 'You Lose';
+      winMsg.innerHTML = 'You Lose 💩';
       winMsg.style.color = 'red';
       return;
     }else 
         console.log('You Win2')
         winMsg.innerHTML = 'You Win';
-        winMsg.style.color = 'green';
+        winMsg.style.color = 'rgb(46, 206, 6)';
         return;
     }
   if (computerSelection === 'scissors') {
     if (e.target.id === 'rock') {
       console.log('You Win3')
       winMsg.innerHTML = 'You Win';
-      winMsg.style.color = 'green';
+      winMsg.style.color = 'rgb(46, 206, 6)';
       return;
     }else 
         console.log('COM win3')
-        winMsg.innerHTML = 'You Lose';
+        winMsg.innerHTML = 'You Lose 💩';
         winMsg.style.color = 'red';
         return;
     }
 } 
   
 //game action display
-
 function actionDisplay(computerSelection,e) {
   if (e.target.id == 'rock') {
     clickedRock.style.visibility = 'visible';

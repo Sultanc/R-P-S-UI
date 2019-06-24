@@ -34,16 +34,17 @@ html {
     border-color: black;
     border-width: 5px;
     border-radius: 10px;
-    width: 280px;
+    width: 250px;
     text-align: center;
-    left: 350px;
+    left: 370px;
     top: 300px;
     margin: auto;
+    justify-content: center;
 }
 
 .winner {
     display: inline-block;
-    font-size: 60px;
+    font-size: 30px;
     margin: auto;
 }
 
