@@ -9,6 +9,11 @@ const compGuess_P = document.querySelector('#compguess-p');
 const compGuess_S = document.querySelector('#compguess-s');
 const winMsg = document.querySelector('.winner');
 const winContainer = document.querySelector('.win-container');
+const compScore = document.querySelector('.comp-score');
+const playerScore = document.querySelector('.player-score'); 
+
+
+//----------------------------------------------------------------------------------------------------------
 
 function game(e){
     const computerSelection = computerPlay();
@@ -35,11 +40,13 @@ function playRound(computerSelection,e) {
       console.log('You Win1')
       winMsg.innerHTML = 'You Win';
       winMsg.style.color = 'rgb(46, 206, 6)';
+      playerScore.innerHTML ++;
       return;
     }else 
         console.log('COM win1')
         winMsg.innerHTML = 'You Lose 💩';
         winMsg.style.color = 'red';
+        compScore.innerHTML ++;
         return;
      }
   if (computerSelection === 'paper') {
@@ -47,11 +54,13 @@ function playRound(computerSelection,e) {
       console.log('COM win2')
       winMsg.innerHTML = 'You Lose 💩';
       winMsg.style.color = 'red';
+      compScore.innerHTML ++;
       return;
     }else 
         console.log('You Win2')
         winMsg.innerHTML = 'You Win';
         winMsg.style.color = 'rgb(46, 206, 6)';
+        playerScore.innerHTML ++;
         return;
     }
   if (computerSelection === 'scissors') {
@@ -59,11 +68,13 @@ function playRound(computerSelection,e) {
       console.log('You Win3')
       winMsg.innerHTML = 'You Win';
       winMsg.style.color = 'rgb(46, 206, 6)';
+      playerScore.innerHTML ++;
       return;
     }else 
         console.log('COM win3')
         winMsg.innerHTML = 'You Lose 💩';
         winMsg.style.color = 'red';
+        compScore.innerHTML ++;
         return;
     }
 } 
