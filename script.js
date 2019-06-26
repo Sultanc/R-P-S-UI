@@ -26,6 +26,7 @@ function game(e){
     console.log(e.target.id)
     actionDisplay(computerSelection,e);
     playRound(computerSelection,e);
+    gameEnd();
 }
 
 //match up
@@ -107,4 +108,13 @@ function actionDisplay(computerSelection,e) {
   }else compGuess_S.style.visibility = 'hidden';
 }
 
+function gameEnd() {
+  if (compScore.innerHTML <= getValue.value || playerScore.innerHTML <= getValue.value)
+    if(compScore > playerScore) {
+      console.log('comp wins')
+    }
+    else if (playerScore > compScore) {
+      console.log('player wins')
+    }
+}
  
