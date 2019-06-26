@@ -10,10 +10,11 @@ const compGuess_S = document.querySelector('#compguess-s');
 const winMsg = document.querySelector('.winner');
 const winContainer = document.querySelector('.win-container');
 const compScore = document.querySelector('.comp-score');
-const playerScore = document.querySelector('.player-score'); 
+const playerScore = document.querySelector('.player-score');
+const getValue = document.querySelector('#input-value');
+console.log(getValue.value)
 
-
-//----------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------
 
 function game(e){
     const computerSelection = computerPlay();

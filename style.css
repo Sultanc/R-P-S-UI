@@ -147,51 +147,39 @@ h3 {
 
 /* action display */
 #clicked-r {
-    /* visibility: visible; */
     position: absolute;
     right: 45px;
     height: 100px;
-    /* animation-name: example; */
     animation-duration: 1s;
 }
 #clicked-p {
-    /* visibility: visible; */
     position: absolute;
     right: 140px;
     height: 100px;
-    /* animation-name: example; */
     animation-duration: 1s;
 }
 #clicked-s {
-    /* visibility: visible; */
     position: absolute;
     right: 245px;
     height: 100px;
-    /* animation-name: example; */
     animation-duration: 1s;
 }
 #compguess-r {
-    /* visibility: visible; */
     position: absolute;
     left: 145px;
     height: 100px;
-    /* animation-name: example; */
     animation-duration: 1s;
 }
 #compguess-p {
-    /* visibility: visible; */
     position: absolute;
     left: 145px;
     height: 100px;
-    /* animation-name: example; */
     animation-duration: 1s;
 }
 #compguess-s {
-    /* visibility: visible; */
     position: absolute;
     left: 145px;
     height: 100px;
-    /* animation-name: example; */
     animation-duration: 1s;
 }
 
@@ -219,4 +207,14 @@ h3 {
     font-family: monospace;
     font-size: 30px;
     margin: auto;
+}
+
+.rounds-input {
+    position: absolute;
+    left: 385px;
+    top: 400px;
+}
+
+#input-value {
+    width: 50px;
 }
