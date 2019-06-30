@@ -12,7 +12,8 @@ const winContainer = document.querySelector('.win-container');
 const compScore = document.querySelector('.comp-score');
 const playerScore = document.querySelector('.player-score');
 const roundsValue = document.querySelector('#input-value');
-const popupContainer = document.querySelector('.popup-container')
+const popupContainer = document.querySelector('.popup-container');
+const winnerCall = document.querySelector('.winner-call');
 
 //---------------------------------------------------------------
 
@@ -114,7 +115,12 @@ function gameEnd() {
   if ((Number(compScore.innerHTML) >= Number(roundsValue.value)) || (Number(playerScore.innerHTML) >= Number(roundsValue.value))) {
     console.log('value: ' + roundsValue.value)
     popupContainer.style.display= 'block';
+    if (Number(compScore.innerHTML) > Number(playerScore.innerHTML)) {
+      winnerCall.innerHTML = 'You Lose 💩'
+    }
+    if (Number(playerScore.innerHTML) > Number(compScore.innerHTML)) {
+      winnerCall.innerHTML = 'You Win'
+    }
   }
-  // if (Number()) {}
 }
 //  converttonumber
