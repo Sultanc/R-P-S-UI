@@ -11,8 +11,8 @@ const winMsg = document.querySelector('.winner');
 const winContainer = document.querySelector('.win-container');
 const compScore = document.querySelector('.comp-score');
 const playerScore = document.querySelector('.player-score');
-const getValue = document.querySelector('#input-value');
-console.log(getValue.value)
+const roundsValue = document.querySelector('#input-value');
+const popupContainer = document.querySelector('.popup-container')
 
 //---------------------------------------------------------------
 
@@ -24,8 +24,8 @@ function game(e){
     }
     console.log('COM: ' + computerSelection)
     console.log(e.target.id)
-    actionDisplay(computerSelection,e);
     playRound(computerSelection,e);
+    actionDisplay(computerSelection,e);
     gameEnd();
 }
 
@@ -84,37 +84,34 @@ function playRound(computerSelection,e) {
 //game action display
 function actionDisplay(computerSelection,e) {
   if (e.target.id == 'rock') {
-    clickedRock.style.visibility = 'visible';
-  }else clickedRock.style.visibility = 'hidden';
+    clickedRock.style.display = 'block';
+  }else clickedRock.style.display = 'none';
 
   if (e.target.id == 'paper') {
-    clickedPaper.style.visibility = 'visible';
-  }else clickedPaper.style.visibility = 'hidden';
+    clickedPaper.style.display = 'block';
+  }else clickedPaper.style.display = 'none';
 
   if (e.target.id == 'scissors') {
-    clickedScissors.style.visibility = 'visible';
-  }else clickedScissors.style.visibility = 'hidden';
+    clickedScissors.style.display = 'block';
+  }else clickedScissors.style.display = 'none';
 
   if (computerSelection == 'rock') {
-    compGuess_R.style.visibility = 'visible';
-  }else compGuess_R.style.visibility = 'hidden';
+    compGuess_R.style.display = 'block';
+  }else compGuess_R.style.display = 'none';
 
   if (computerSelection == 'paper') {
-    compGuess_P.style.visibility = 'visible';
-  }else compGuess_P.style.visibility = 'hidden';
+    compGuess_P.style.display = 'block';
+  }else compGuess_P.style.display = 'none';
 
   if (computerSelection == 'scissors') {
-    compGuess_S.style.visibility = 'visible';
-  }else compGuess_S.style.visibility = 'hidden';
+    compGuess_S.style.display = 'block';
+  }else compGuess_S.style.display = 'none';
 }
 
 function gameEnd() {
-  if (compScore.innerHTML <= getValue.value || playerScore.innerHTML <= getValue.value)
-    if(compScore > playerScore) {
-      console.log('comp wins')
-    }
-    else if (playerScore > compScore) {
-      console.log('player wins')
-    }
+  if ((compScore.innerHTML >= roundsValue.value ) || (playerScore.innerHTML >= roundsValue.value)) {
+    console.log('value: ' + roundsValue.value)
+    popupContainer.style.display= 'block';
+  }
 }
  

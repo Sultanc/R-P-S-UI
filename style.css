@@ -218,3 +218,14 @@ h3 {
 #input-value {
     width: 50px;
 }
+
+.popup-container {
+    position: absolute;
+    background-color: rgba(160, 158, 158, 0.9);
+    border-radius: 10px;
+    width: 800px;
+    height: 500px;
+    left: 110px;
+    top: 15px;
+    /* animation */
+}
