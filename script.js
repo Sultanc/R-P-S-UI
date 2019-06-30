@@ -24,6 +24,8 @@ function game(e){
     }
     console.log('COM: ' + computerSelection)
     console.log(e.target.id)
+    console.log('value: ' + roundsValue.value)
+    console.log(compScore.innerHTML + ' ' + playerScore.innerHTML)
     playRound(computerSelection,e);
     actionDisplay(computerSelection,e);
     gameEnd();
@@ -109,9 +111,10 @@ function actionDisplay(computerSelection,e) {
 }
 
 function gameEnd() {
-  if ((compScore.innerHTML >= roundsValue.value ) || (playerScore.innerHTML >= roundsValue.value)) {
+  if ((Number(compScore.innerHTML) >= Number(roundsValue.value)) || (Number(playerScore.innerHTML) >= Number(roundsValue.value))) {
     console.log('value: ' + roundsValue.value)
     popupContainer.style.display= 'block';
   }
+  // if (Number()) {}
 }
- 
+//  converttonumber
