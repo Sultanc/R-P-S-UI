@@ -211,8 +211,10 @@ h3 {
 
 .rounds-input {
     position: absolute;
-    left: 385px;
-    top: 400px;
+    left: 30px;
+    top: 430px;
+    font-family: monospace;
+    font-size: 15px;
 }
 
 #input-value {
@@ -221,7 +223,7 @@ h3 {
 
 .popup-container {
     position: absolute;
-    background-color: rgba(82, 82, 82, 0.9);
+    background-color: rgba(48, 48, 48);
     border-radius: 15px;
     width: 350px;
     height: 350px;
@@ -232,7 +234,7 @@ h3 {
 
 .game-over {
     position: absolute;
-    background-color: rgb(255, 222, 13, 0.7);
+    background-color: rgb(255, 222, 13);
     border-radius: 10px;
     font-family: monospace;
     width: 170px;
