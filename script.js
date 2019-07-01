@@ -1,6 +1,7 @@
 const rock = document.querySelector('#rock').addEventListener('click',game);
 const paper = document.querySelector('#paper').addEventListener('click',game);
 const scissors = document.querySelector('#scissors').addEventListener('click',game);
+const reset = document.querySelector('.reset').addEventListener('click',resetGame);
 const clickedRock = document.querySelector('#clicked-r');
 const clickedPaper = document.querySelector('#clicked-p');
 const clickedScissors = document.querySelector('#clicked-s');
@@ -18,6 +19,10 @@ const prize = document.querySelector('.prize');
 
 //---------------------------------------------------------------
 
+document.getElementById("rock").disabled = false;
+document.getElementById("paper").disabled = false;
+document.getElementById("scissors").disabled = false;
+
 function game(e){
     const computerSelection = computerPlay();
     function computerPlay() {
@@ -28,6 +33,7 @@ function game(e){
     console.log(e.target.id)
     console.log('value: ' + roundsValue.value)
     console.log(compScore.innerHTML + ' ' + playerScore.innerHTML)
+    
     playRound(computerSelection,e);
     actionDisplay(computerSelection,e);
     gameEnd();
@@ -115,15 +121,25 @@ function actionDisplay(computerSelection,e) {
 function gameEnd() {
   if ((Number(compScore.innerHTML) >= Number(roundsValue.value)) || (Number(playerScore.innerHTML) >= Number(roundsValue.value))) {
     console.log('value: ' + roundsValue.value)
+    document.getElementById("rock").disabled = true;
+    document.getElementById("paper").disabled = true;
+    document.getElementById("scissors").disabled = true;
+    playerScore.innerHTML = '0';
+    compScore.innerHTML = '0';
     popupContainer.style.display= 'block';
     if (Number(compScore.innerHTML) > Number(playerScore.innerHTML)) {
       winnerCall.innerHTML = 'You Lose 💩'
       winnerCall.style.color = 'red';
     }
     if (Number(playerScore.innerHTML) > Number(compScore.innerHTML)) {
-      winnerCall.innerHTML = 'You Win'
+      winnerCall.innerHTML = 'You Win';
       winnerCall.style.color = 'rgb(46, 206, 6)';
       prize.style.display = 'block';
     }
   }
+}
+
+function resetGame() {
+  popupContainer.style.display= 'none';
+  game();
 }

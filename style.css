@@ -214,7 +214,7 @@ h3 {
     left: 30px;
     top: 430px;
     font-family: monospace;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 #input-value {
@@ -260,4 +260,22 @@ h3 {
     left:65px;
     bottom: 120px;
     color: rgba(255, 255, 255, 0.568);
+}
+
+.reset{
+    position: absolute;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgba(219, 207, 207, 0.26);
+    width: 180px;
+    height: 70px;
+    left: 85px;
+    top: 250px;
+    font-family: monospace;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.reset:hover {
+    background-color: rgb(219, 207, 207);
 }
