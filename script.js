@@ -14,6 +14,7 @@ const playerScore = document.querySelector('.player-score');
 const roundsValue = document.querySelector('#input-value');
 const popupContainer = document.querySelector('.popup-container');
 const winnerCall = document.querySelector('.winner-call');
+const prize = document.querySelector('.prize');
 
 //---------------------------------------------------------------
 
@@ -117,10 +118,12 @@ function gameEnd() {
     popupContainer.style.display= 'block';
     if (Number(compScore.innerHTML) > Number(playerScore.innerHTML)) {
       winnerCall.innerHTML = 'You Lose 💩'
+      winnerCall.style.color = 'red';
     }
     if (Number(playerScore.innerHTML) > Number(compScore.innerHTML)) {
       winnerCall.innerHTML = 'You Win'
+      winnerCall.style.color = 'rgb(46, 206, 6)';
+      prize.style.display = 'block';
     }
   }
 }
-//  converttonumber

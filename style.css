@@ -186,9 +186,9 @@ h3 {
 @keyframes example {
     from {visibility: visible;}
     to {visibility: hidden;}
-  }
+}
 
-  .win-container {
+.win-container {
     position: absolute;
     border-style: solid;
     border-color: black;
@@ -221,11 +221,41 @@ h3 {
 
 .popup-container {
     position: absolute;
-    background-color: rgba(160, 160, 158, 0.9);
-    border-radius: 10px;
-    width: 800px;
-    height: 500px;
-    left: 110px;
-    top: 15px;
+    background-color: rgba(82, 82, 82, 0.9);
+    border-radius: 15px;
+    width: 350px;
+    height: 350px;
+    left: 325px;
+    top: 40px;
     /* animation */
+}
+
+.game-over {
+    position: absolute;
+    background-color: rgb(255, 222, 13, 0.7);
+    border-radius: 10px;
+    font-family: monospace;
+    width: 170px;
+    height: 30px;
+    left: 80px;
+    top: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.winner-call {
+    position: absolute;
+    font-family: monospace;
+    font-size: 35px;
+    width: 170px;
+    left: 90px;
+    top: 100px;
+    text-align: center;
+}
+
+.prize {
+    position: absolute;
+    left:65px;
+    bottom: 120px;
+    color: rgba(255, 255, 255, 0.568);
 }
