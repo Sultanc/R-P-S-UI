@@ -223,7 +223,7 @@ h3 {
 
 .popup-container {
     position: absolute;
-    background-color: rgba(48, 48, 48);
+    background-color: rgba(48, 48, 48, 0.97);
     border-radius: 15px;
     width: 350px;
     height: 350px;

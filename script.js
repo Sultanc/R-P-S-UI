@@ -19,18 +19,16 @@ const prize = document.querySelector('.prize');
 
 //---------------------------------------------------------------
 
-document.getElementById("rock").disabled = false;
-document.getElementById("paper").disabled = false;
-document.getElementById("scissors").disabled = false;
-
 function game(e){
+
+
     const computerSelection = computerPlay();
     function computerPlay() {
       let computerGuess = ['rock','paper','scissors'];
       return computerGuess[Math.floor(Math.random() * 3)];
     }
     console.log('COM: ' + computerSelection)
-    console.log(e.target.id)
+    // console.log(e.target.id)
     console.log('value: ' + roundsValue.value)
     console.log(compScore.innerHTML + ' ' + playerScore.innerHTML)
     
@@ -124,8 +122,6 @@ function gameEnd() {
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
     document.getElementById("scissors").disabled = true;
-    playerScore.innerHTML = '0';
-    compScore.innerHTML = '0';
     popupContainer.style.display= 'block';
     if (Number(compScore.innerHTML) > Number(playerScore.innerHTML)) {
       winnerCall.innerHTML = 'You Lose 💩'
@@ -139,7 +135,12 @@ function gameEnd() {
   }
 }
 
-function resetGame() {
+function resetGame() { //play again button
+  playerScore.innerHTML = '0';
+  compScore.innerHTML = '0';
   popupContainer.style.display= 'none';
-  game();
+  prize.style.display = 'none';
+  document.getElementById("rock").disabled = false;
+  document.getElementById("paper").disabled = false;
+  document.getElementById("scissors").disabled = false;
 }
