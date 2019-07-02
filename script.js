@@ -28,7 +28,7 @@ function game(e){
       return computerGuess[Math.floor(Math.random() * 3)];
     }
     console.log('COM: ' + computerSelection)
-    // console.log(e.target.id)
+    console.log(e.target.id)
     console.log('value: ' + roundsValue.value)
     console.log(compScore.innerHTML + ' ' + playerScore.innerHTML)
     
