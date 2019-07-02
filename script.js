@@ -138,6 +138,8 @@ function gameEnd() {
 function resetGame() { //play again button
   playerScore.innerHTML = '0';
   compScore.innerHTML = '0';
+  winMsg.innerHTML = '-----';
+  winMsg.style.color = 'black';
   popupContainer.style.display= 'none';
   prize.style.display = 'none';
   document.getElementById("rock").disabled = false;
