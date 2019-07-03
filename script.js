@@ -20,18 +20,11 @@ const prize = document.querySelector('.prize');
 //---------------------------------------------------------------
 
 function game(e){
-
-
     const computerSelection = computerPlay();
     function computerPlay() {
       let computerGuess = ['rock','paper','scissors'];
       return computerGuess[Math.floor(Math.random() * 3)];
     }
-    console.log('COM: ' + computerSelection)
-    console.log(e.target.id)
-    console.log('value: ' + roundsValue.value)
-    console.log(compScore.innerHTML + ' ' + playerScore.innerHTML)
-    
     playRound(computerSelection,e);
     actionDisplay(computerSelection,e);
     gameEnd();
@@ -40,20 +33,17 @@ function game(e){
 //match up
 function playRound(computerSelection,e) {
   if (computerSelection === e.target.id) {
-    console.log('Draw')
     winMsg.innerHTML = 'Draw';
     winMsg.style.color = 'black';
     return;
   }
   if (computerSelection === 'rock') {
     if (e.target.id === 'paper') {
-      console.log('You Win1')
       winMsg.innerHTML = 'You Win';
       winMsg.style.color = 'rgb(46, 206, 6)';
       playerScore.innerHTML ++;
       return;
     }else 
-        console.log('COM win1')
         winMsg.innerHTML = 'You Lose 💩';
         winMsg.style.color = 'red';
         compScore.innerHTML ++;
@@ -61,13 +51,11 @@ function playRound(computerSelection,e) {
      }
   if (computerSelection === 'paper') {
     if (e.target.id === 'rock') {
-      console.log('COM win2')
       winMsg.innerHTML = 'You Lose 💩';
       winMsg.style.color = 'red';
       compScore.innerHTML ++;
       return;
     }else 
-        console.log('You Win2')
         winMsg.innerHTML = 'You Win';
         winMsg.style.color = 'rgb(46, 206, 6)';
         playerScore.innerHTML ++;
@@ -75,13 +63,11 @@ function playRound(computerSelection,e) {
     }
   if (computerSelection === 'scissors') {
     if (e.target.id === 'rock') {
-      console.log('You Win3')
       winMsg.innerHTML = 'You Win';
       winMsg.style.color = 'rgb(46, 206, 6)';
       playerScore.innerHTML ++;
       return;
     }else 
-        console.log('COM win3')
         winMsg.innerHTML = 'You Lose 💩';
         winMsg.style.color = 'red';
         compScore.innerHTML ++;
@@ -118,7 +104,6 @@ function actionDisplay(computerSelection,e) {
 
 function gameEnd() {
   if ((Number(compScore.innerHTML) >= Number(roundsValue.value)) || (Number(playerScore.innerHTML) >= Number(roundsValue.value))) {
-    console.log('value: ' + roundsValue.value)
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
     document.getElementById("scissors").disabled = true;
