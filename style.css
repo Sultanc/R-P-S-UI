@@ -1,6 +1,6 @@
 html {
     background-color: rgba(20, 19, 19, 0.9);
-    background-image: url("images/htmlbg.jpg");
+    background-image: url("images/htmlbgoriginal.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -283,4 +283,10 @@ h3 {
 
 .reset:hover {
     background-color: rgb(219, 207, 207);
+}
+
+.glow {
+    position: absolute;
+    left: 270px;
+    top: 550px;
 }
