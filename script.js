@@ -103,11 +103,11 @@ function actionDisplay(computerSelection,e) {
 }
 
 function gameEnd() {
-  if ((Number(compScore.innerHTML) >= Number(roundsValue.value)) || (Number(playerScore.innerHTML) >= Number(roundsValue.value))) {
+  if ((Number(compScore.innerHTML) >= Number(roundsValue.value)) || (Number(playerScore.innerHTML) >= Number(roundsValue.value) || (Number(compScore.innerHTML)) >= 100 || (Number(playerScore.innerHTML)) >= 100)) {
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
     document.getElementById("scissors").disabled = true;
-    popupContainer.style.display= 'block';
+    popupContainer.style.display = 'block';
     if (Number(compScore.innerHTML) > Number(playerScore.innerHTML)) {
       winnerCall.innerHTML = 'You Lose 💩'
       winnerCall.style.color = 'red';
