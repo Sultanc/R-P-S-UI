@@ -75,7 +75,7 @@ function playRound(computerSelection,e) {
     }
 } 
   
-//game action display
+//user and comp selection action display
 function actionDisplay(computerSelection,e) {
   if (e.target.id == 'rock') {
     clickedRock.style.display = 'block';
@@ -125,6 +125,9 @@ function resetGame() { //play again button
   compScore.innerHTML = '0';
   winMsg.innerHTML = '-----';
   winMsg.style.color = 'black';
+  clickedPaper.style.display = 'none';
+  clickedRock.style.display = 'none';
+  clickedScissors.style.display = 'none';
   popupContainer.style.display= 'none';
   prize.style.display = 'none';
   document.getElementById("rock").disabled = false;
