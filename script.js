@@ -125,9 +125,12 @@ function resetGame() { //play again button
   compScore.innerHTML = '0';
   winMsg.innerHTML = '-----';
   winMsg.style.color = 'black';
-  clickedPaper.style.display = 'none';
   clickedRock.style.display = 'none';
+  clickedPaper.style.display = 'none';
   clickedScissors.style.display = 'none';
+  compGuess_R.style.display = 'none';
+  compGuess_P.style.display = 'none';
+  compGuess_S.style.display = 'none';
   popupContainer.style.display= 'none';
   prize.style.display = 'none';
   document.getElementById("rock").disabled = false;
