@@ -1,3 +1,3 @@
 # R-P-S-UI
 
-A small Project from theodinproject 
+A small Project for theodinproject 
